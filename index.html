@@ -962,7 +962,7 @@
                             <div class="counter-number" id="downloadCount">--</div>
                             <div class="counter-label">Downloads</div>
                         </div>
-                        <a href="diabreath-debug.apk" class="btn btn-primary" id="downloadBtn" download>
+                        <a href="https://drive.google.com/file/d/1KeCKMJAtimnR9KQM4OePcExCOdA1kh5x/view?usp=sharing" class="btn btn-primary" id="downloadBtn" target="_blank">
                             <span>⬇</span>
                             <span>Download APK</span>
                         </a>
@@ -1068,13 +1068,8 @@
                 });
                 updateDownloadCount();
                 
-                // Trigger actual download
-                const link = document.createElement('a');
-                link.href = 'diabreath-debug.apk';
-                link.download = 'diabreath-debug.apk';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                // Open Google Drive link in new tab
+                window.open('https://drive.google.com/file/d/1KeCKMJAtimnR9KQM4OePcExCOdA1kh5x/view?usp=sharing', '_blank');
             } catch (error) {
                 console.error('Error:', error);
             }
