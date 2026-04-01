@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background circle (maximized) -->
+  <circle cx="16" cy="16" r="16" fill="#8b1a1a"/>
+  
+  <!-- Letter D (maximized) -->
+  <text x="16" y="24" font-family="Times New Roman, serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#f5f2ea">D</text>
+</svg>
