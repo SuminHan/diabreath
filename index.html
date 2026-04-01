@@ -225,6 +225,12 @@
             gap: 0.5rem;
         }
         
+        /* Ensure buttons in cards take full width */
+        .card-body .btn {
+            width: 100%;
+            justify-content: center;
+        }
+        
         .btn-primary {
             background-color: var(--primary-color);
             color: white;
@@ -554,9 +560,10 @@
             }
             
             /* Fix download button in sidebar */
+            .card .btn,
             .card-body .btn {
                 width: 100% !important;
-                max-width: none;
+                max-width: none !important;
             }
             
             /* Article sections */
