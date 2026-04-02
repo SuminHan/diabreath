@@ -679,6 +679,63 @@
                 margin-bottom: 2rem;
             }
         }
+        
+        /* Device Application Section */
+        .device-application {
+            background-color: white;
+            padding: 3rem 0;
+        }
+        
+        .application-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .application-content h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .application-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+        
+        .application-info {
+            background-color: var(--cream-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        
+        .application-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .application-info li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .application-info li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Comments Section */
+        .comments {
+            background-color: var(--cream-bg);
+            padding: 3rem 0;
+        }
     </style>
 </head>
 <body>
@@ -691,6 +748,7 @@
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#device">Device & App</a></li>
                 <li><a href="#results">Results</a></li>
+                <li><a href="#device-application">Device Application</a></li>
                 <li><a href="#discussion">Discussion</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
@@ -699,6 +757,7 @@
                 <a href="#methodology">Methodology</a>
                 <a href="#device">Device & App</a>
                 <a href="#results">Results</a>
+                <a href="#device-application">Device Application</a>
                 <a href="#discussion">Discussion</a>
             </div>
         </nav>
@@ -981,11 +1040,46 @@
             </aside>
         </div>
         
+        <!-- Device Application Section -->
+        <section id="device-application" class="device-application">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">VI.</span>
+                    <span>Device Application</span>
+                </h2>
+                <hr class="section-divider">
+                <div class="application-content">
+                    <h3>Apply for DiaBreath Research Device</h3>
+                    <p>
+                        Interested in participating in our research? Healthcare professionals, researchers, and individuals 
+                        interested in non-invasive diabetes monitoring can apply to receive a DiaBreath device prototype.
+                    </p>
+                    <div class="application-info">
+                        <ul>
+                            <li>Limited quantities available</li>
+                            <li>Research prototype (not FDA-approved)</li>
+                            <li>Priority given to healthcare institutions</li>
+                            <li>Estimated delivery: 4-6 weeks</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <a href="https://forms.gle/JLeHPeMjeoLDaNqw5" class="btn btn-primary" target="_blank" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                            <span>📝</span>
+                            <span>Apply for Device</span>
+                        </a>
+                        <p style="font-size: 0.875rem; color: var(--text-light); margin-top: 0.5rem;">
+                            Application form takes 3-5 minutes to complete
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Comments Section -->
         <section id="discussion" class="comments">
             <div class="container">
                 <h2 class="section-title">
-                    <span class="section-number">VI.</span>
+                    <span class="section-number">VII.</span>
                     <span>Comments & Discussion</span>
                 </h2>
                 <hr class="section-divider">
