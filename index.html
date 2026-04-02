@@ -1050,11 +1050,7 @@
         // Download Counter
         async function updateDownloadCount() {
             try {
-                const response = await fetch('https://api.counterapi.dev/v2/sumin-hans-team-3546/diabreath', {
-                    headers: {
-                        'Authorization': 'Bearer ut_jARDHP7p1PTErsgnjSd8HzYVDcLPq7aV3ANL8L3n'
-                    }
-                });
+                const response = await fetch('https://api.counterapi.dev/v1/diabreath-smhanlab/apk-downloads/');
                 const data = await response.json();
                 document.getElementById('downloadCount').textContent = data.count || '--';
             } catch (error) {
@@ -1067,12 +1063,7 @@
             e.preventDefault();
             try {
                 // Update counter
-                await fetch('https://api.counterapi.dev/v2/sumin-hans-team-3546/diabreath/up', {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': 'Bearer ut_jARDHP7p1PTErsgnjSd8HzYVDcLPq7aV3ANL8L3n'
-                    }
-                });
+                await fetch('https://api.counterapi.dev/v1/diabreath-smhanlab/apk-downloads/up');
                 updateDownloadCount();
                 
                 // Open Google Drive link in new tab
